@@ -10,7 +10,7 @@ Enable remote AppleScript Events and give that user access.
 <img width="668" alt="2 apple events" src="https://user-images.githubusercontent.com/1725068/39793888-5975f468-5382-11e8-83e0-e16476bad61d.png">
 
 ```applescript
-on startDGWServer(user, pass, address)
+on startMyAPP(user, pass, address)
 	
 	set the remoteMac to machine ("eppc://" & user & ":" & pass & "@" & address as string)
 	tell application "Finder" of remoteMac
@@ -21,11 +21,11 @@ on startDGWServer(user, pass, address)
 		end using terms from
 	end tell
 	
-end startDGWServer
+end startMyAPP
 
 on run argv
 	set {user, pass, address} to argv
-	startDGWServer(user, pass, address)
+	startMyAPP(user, pass, address)
 end run
 ```
 
