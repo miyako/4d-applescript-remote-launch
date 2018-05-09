@@ -29,7 +29,7 @@ on run argv
 end run
 ```
 
-Call it as so:
+Call it like so:
 
 ```sh
 osascript theScript.scpt jimmy fallon miyako-no-MacBook.local
