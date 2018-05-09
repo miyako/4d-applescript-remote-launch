@@ -16,7 +16,7 @@ on startMyApp(user, pass, address)
 	tell application "Finder" of remoteMac
 		using terms from application "Finder"
 			set the appPath to path to application support from user domain as string
-			set the appPath to appPath & "DGWServer:DB:Doctor’s Good Will Server.app"
+			set the appPath to appPath & "myApp.app"
 			open application file the appPath as string
 		end using terms from
 	end tell
